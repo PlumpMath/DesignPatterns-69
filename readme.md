@@ -1,1 +1,1 @@
-This is a example project for me to learn "the dang of four" design patterns in C# .NET code
+This is a example project for me to learn "the gang of four" design patterns in C# .NET code

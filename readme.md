@@ -1,0 +1,1 @@
+This is a example project for me to learn "the dang of four" design patterns in C# .NET code

@@ -1,0 +1,6 @@
+G:\projects\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.exe
+G:\projects\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.pdb
+G:\projects\DesignPatterns\DesignPatterns\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\projects\DesignPatterns\DesignPatterns\obj\x86\Debug\DesignPatterns.exe
+G:\projects\DesignPatterns\DesignPatterns\obj\x86\Debug\DesignPatterns.pdb
+G:\projects\DesignPatterns\DesignPatterns\bin\Debug\Structural\Composite\Composite.dat

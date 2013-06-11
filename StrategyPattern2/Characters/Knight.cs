@@ -9,6 +9,10 @@ namespace StrategyPattern2.Characters
         {
             Weapon = new BowAndArrow();
         }
+        public Knight(IWeapon weapon)
+        {
+            Weapon = weapon;
+        }
         public override void Fight()
         {
             Console.WriteLine("The Knight fights...");

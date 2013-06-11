@@ -41,7 +41,7 @@ namespace StrategyPattern2
             Console.WriteLine(UsageText);
             Console.ReadLine();
 
-            var knightWithLightSaber = new Knight() {Weapon = new LightSaber()};
+            var knightWithLightSaber = new Knight(new LightSaber());
             knightWithLightSaber.Fight();
 
             Console.ReadLine();

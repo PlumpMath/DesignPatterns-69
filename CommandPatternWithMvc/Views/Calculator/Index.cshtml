@@ -1,0 +1,52 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "Calculator with Command Pattern and MVC";
+    Layout = "../_Layout.cshtml";
+}
+
+<h2>Calculator</h2>
+
+@using(Html.BeginForm()){
+    
+    <div id="calculator-body">
+    
+        <textarea id="paper" style="width: 400px; height: 400px; float: left;"></textarea>
+        <input type="text" class="display"></input>
+    
+        <div class="keypad">
+            <table>
+                <tr>
+                    <td><input type="submit" class="key" value="9" /></td>
+                    <td><input type="submit" class="key" value="8" /></td>
+                    <td><input type="submit" class="key" value="7" /></td>
+                    <td><input type="submit" class="key" value="*" /></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" class="key" value="4" /></td>
+                    <td><input type="submit" class="key" value="5" /></td>
+                    <td><input type="submit" class="key" value="6" /></td>
+                    <td><input type="submit" class="key" value="x" /></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" class="key" value="1" /></td>
+                    <td><input type="submit" class="key" value="2" /></td>
+                    <td><input type="submit" class="key" value="3" /></td>
+                    <td><input type="submit" class="key" value="-" /></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" class="key" value="C" /></td>
+                    <td><input type="submit" class="key" value="0" /></td>
+                    <td><input type="submit" class="key" value="CE" /></td>
+                    <td><input type="submit" class="key" value="+" /></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <input type="submit" class="undo" value="Undo" />
+            <input type="submit" class="redo" value="Redo" />
+        </div>
+    
+    </div>
+    
+}

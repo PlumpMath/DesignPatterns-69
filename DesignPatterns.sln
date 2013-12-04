@@ -25,6 +25,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandPatternWithMvc", "Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPatternWpf", "FactoryPatternWpf\FactoryPatternWpf.csproj", "{B3A5772F-7AE6-43E1-869A-2397E11CC4B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactoryPattern", "AbstractFactoryPattern\AbstractFactoryPattern.csproj", "{A5475179-01C6-4B5D-A889-1D5A25984268}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Html5CanvasDecoratorPattern", "Html5CanvasDecoratorPattern\Html5CanvasDecoratorPattern.csproj", "{291638C8-367B-4081-9988-5C60B58BF57F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BB20ECCA-D641-4855-8842-E5113A3259F0}"
+	ProjectSection(SolutionItems) = preProject
+		WE-settings.xml = WE-settings.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -145,6 +154,26 @@ Global
 		{B3A5772F-7AE6-43E1-869A-2397E11CC4B4}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{B3A5772F-7AE6-43E1-869A-2397E11CC4B4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{B3A5772F-7AE6-43E1-869A-2397E11CC4B4}.Release|x86.ActiveCfg = Release|Any CPU
+		{A5475179-01C6-4B5D-A889-1D5A25984268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5475179-01C6-4B5D-A889-1D5A25984268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5475179-01C6-4B5D-A889-1D5A25984268}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A5475179-01C6-4B5D-A889-1D5A25984268}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A5475179-01C6-4B5D-A889-1D5A25984268}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A5475179-01C6-4B5D-A889-1D5A25984268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5475179-01C6-4B5D-A889-1D5A25984268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5475179-01C6-4B5D-A889-1D5A25984268}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A5475179-01C6-4B5D-A889-1D5A25984268}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A5475179-01C6-4B5D-A889-1D5A25984268}.Release|x86.ActiveCfg = Release|Any CPU
+		{291638C8-367B-4081-9988-5C60B58BF57F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{291638C8-367B-4081-9988-5C60B58BF57F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{291638C8-367B-4081-9988-5C60B58BF57F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{291638C8-367B-4081-9988-5C60B58BF57F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{291638C8-367B-4081-9988-5C60B58BF57F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{291638C8-367B-4081-9988-5C60B58BF57F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{291638C8-367B-4081-9988-5C60B58BF57F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{291638C8-367B-4081-9988-5C60B58BF57F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{291638C8-367B-4081-9988-5C60B58BF57F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{291638C8-367B-4081-9988-5C60B58BF57F}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -160,5 +189,7 @@ Global
 		{7D3DAB43-8AF2-4C9B-94A7-3CB6FBE2CBE6} = {C58EBF33-1020-41FD-B937-998C1C4520BE}
 		{060B1BD9-3158-49BE-8240-0EC2B8238D9E} = {C58EBF33-1020-41FD-B937-998C1C4520BE}
 		{B3A5772F-7AE6-43E1-869A-2397E11CC4B4} = {C58EBF33-1020-41FD-B937-998C1C4520BE}
+		{A5475179-01C6-4B5D-A889-1D5A25984268} = {C58EBF33-1020-41FD-B937-998C1C4520BE}
+		{291638C8-367B-4081-9988-5C60B58BF57F} = {C58EBF33-1020-41FD-B937-998C1C4520BE}
 	EndGlobalSection
 EndGlobal

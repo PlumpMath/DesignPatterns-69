@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5475179-01C6-4B5D-A889-1D5A25984268}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AbstractFactoryPattern</RootNamespace>
+    <AssemblyName>AbstractFactoryPattern</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\StrategyPattern2\Characters\Character.cs">
+      <Link>Characters\Character.cs</Link>
+    </Compile>
+    <Compile Include="..\StrategyPattern2\Characters\ICharacter.cs">
+      <Link>Characters\ICharacter.cs</Link>
+    </Compile>
+    <Compile Include="..\StrategyPattern2\Characters\Jedi.cs">
+      <Link>Characters\Jedi.cs</Link>
+    </Compile>
+    <Compile Include="..\StrategyPattern2\Characters\King.cs">
+      <Link>Characters\King.cs</Link>
+    </Compile>
+    <Compile Include="..\StrategyPattern2\Characters\Knight.cs">
+      <Link>Characters\Knight.cs</Link>
+    </Compile>
+    <Compile Include="..\StrategyPattern2\Characters\Queen.cs">
+      <Link>Characters\Queen.cs</Link>
+    </Compile>
+    <Compile Include="..\StrategyPattern2\Characters\Troll.cs">
+      <Link>Characters\Troll.cs</Link>
+    </Compile>
+    <Compile Include="..\StrategyPattern2\Weapons\Axe.cs">
+      <Link>Weapons\Axe.cs</Link>
+    </Compile>
+    <Compile Include="..\StrategyPattern2\Weapons\BowAndArrow.cs">
+      <Link>Weapons\BowAndArrow.cs</Link>
+    </Compile>
+    <Compile Include="..\StrategyPattern2\Weapons\IWeapon.cs">
+      <Link>Weapons\IWeapon.cs</Link>
+    </Compile>
+    <Compile Include="..\StrategyPattern2\Weapons\Knife.cs">
+      <Link>Weapons\Knife.cs</Link>
+    </Compile>
+    <Compile Include="..\StrategyPattern2\Weapons\LightSaber.cs">
+      <Link>Weapons\LightSaber.cs</Link>
+    </Compile>
+    <Compile Include="..\StrategyPattern2\Weapons\Sword.cs">
+      <Link>Weapons\Sword.cs</Link>
+    </Compile>
+    <Compile Include="Characters\CloneTroop.cs" />
+    <Compile Include="Characters\Droid.cs" />
+    <Compile Include="Characters\Pilot.cs" />
+    <Compile Include="Characters\RebelSoldier.cs" />
+    <Compile Include="Characters\Sith.cs" />
+    <Compile Include="Characters\StormTrooper.cs" />
+    <Compile Include="DisplayLegion.cs" />
+    <Compile Include="Factions\Aeronautical.cs" />
+    <Compile Include="Factions\Auxiliary.cs" />
+    <Compile Include="Factions\Battery.cs" />
+    <Compile Include="Factions\IFaction.cs" />
+    <Compile Include="Factions\Infantry.cs" />
+    <Compile Include="Factions\Knights.cs" />
+    <Compile Include="Factions\Reconnaissance.cs" />
+    <Compile Include="Factories\IFactionFactory.cs" />
+    <Compile Include="Factories\ILegionFactory.cs" />
+    <Compile Include="Factories\ImperialFactionFactory.cs" />
+    <Compile Include="Factories\LegionFactory.cs" />
+    <Compile Include="Factories\RebelFactionFactory.cs" />
+    <Compile Include="Legions\ALegion.cs" />
+    <Compile Include="Legions\ILegion.cs" />
+    <Compile Include="Legions\ImperialArmy.cs" />
+    <Compile Include="Legions\RebelArmy.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Weapons\Blaster.cs" />
+    <Compile Include="Weapons\BlasterCanons.cs" />
+    <Compile Include="Weapons\BlasterRifle.cs" />
+    <Compile Include="Weapons\HoverTank.cs" />
+    <Compile Include="Weapons\StarFighter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
